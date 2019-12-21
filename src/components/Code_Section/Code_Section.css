@@ -1,0 +1,32 @@
+.code_section{
+    font-size: x-large;
+    display: flex !important;
+    flex-direction: row;
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #383838;
+    padding: 25px !important;
+    box-shadow: inset 0px 0px 24px -8px rgba(0,0,0,0.75);
+    overflow-x: unset !important;
+    border-radius: 10px;
+}
+.code_section code{
+    font-family: monospace;
+}
+#cd{
+    padding: 0;
+}
+#line_number{
+    font-family: monospace;
+    padding-right: 30px !important;
+    padding-left: 20px !important;
+    border-right: solid 1px #717171;
+    white-space: pre-line !important;
+}
+.pre_code{
+    margin: 0;
+}
+.actual_code{
+    padding: 10px;
+}

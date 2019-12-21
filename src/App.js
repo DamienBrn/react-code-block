@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CodeSection from './components/Code_Section/Code_Section'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="code_samples">
+
+        <CodeSection theme="monokai-sublime" lang="js">
+            {
+              "import icon from 'icon.js'\n" + 
+              "let a = 12\n"+
+              "for(let i = 0; i < 10; i++){\n"+
+              "\ta += i\n"+
+              "}\n"+
+              "console.log(a)\n"
+            }
+        </CodeSection>
+
+
+        <CodeSection theme="ocean" lang="php">
+            {
+              "<?php\n"+
+              "echo \"Hello World!\";\n"+
+              "?>"
+            }
+        </CodeSection>
+
+      </div>
     </div>
   );
 }
